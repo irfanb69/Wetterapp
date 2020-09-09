@@ -1,0 +1,34 @@
+﻿@model WetterApp.Models.Wetter
+
+@{
+    ViewData["Title"] = "Auswerten";
+}
+
+<form method="get" asp-controller="Wetter" asp-action="Auswerten">
+
+
+    <label for="exampleFormControlSelect1">Wähle eine Stadt</label>
+    <table class="table">
+        <tr>
+            <td>
+                <select name="stadt" class="form-control" id="exampleFormControlSelect1">
+                    <option>Duisburg</option>
+                    <option>Berlin</option>
+                    <option>Bayburt</option>
+                    <option>Istanbul</option>
+                    <option>Dinslaken</option>
+                </select>
+            </td>
+            <td>
+                <input type="submit" class="btn btn-primary" />
+            </td>
+        </tr>
+    </table>
+</form>
+<hr />
+<div class="jumbotron">
+    <h1 class="display-4">@Html.DisplayFor(model => model.Name)</h1>
+    <hr class="my-4">
+    <p>Windgeschwindigkeit: @Html.DisplayFor(model => model.Windgeschwindigkeit)</p>
+    <h1>@Html.DisplayFor(model => model.WetterLage) @Html.DisplayFor(model => model.Temperatur)&degC</h1>
+</div>

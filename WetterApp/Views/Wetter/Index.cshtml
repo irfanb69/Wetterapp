@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form method="get" asp-controller="Wetter" asp-action="Auswerten">
+
+    
+    <label for="exampleFormControlSelect1">Wähle eine Stadt</label>
+    <table class="table">
+        <tr>
+            <td>
+                <select name="stadt" class="form-control" id="exampleFormControlSelect1">
+                    <option>Duisburg</option>
+                    <option>Berlin</option>
+                    <option>Bayburt</option>
+                    <option>Istanbul</option>
+                    <option>Dinslaken</option>
+                </select>
+            </td>
+            <td>
+                <input type="submit" class="btn btn-primary" />
+            </td>
+        </tr>
+    </table>
+    <hr />
+</form>
+
