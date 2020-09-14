@@ -31,4 +31,13 @@
     <hr class="my-4">
     <p>Windgeschwindigkeit: @Html.DisplayFor(model => model.Windgeschwindigkeit)</p>
     <h1>@Html.DisplayFor(model => model.WetterLage) @Html.DisplayFor(model => model.Temperatur)&degC</h1>
+    <form asp-action="Speichern">
+        @Html.HiddenFor(model => model.Name)
+        @Html.HiddenFor(model => model.WetterLage)
+        @Html.HiddenFor(model => model.Windgeschwindigkeit)
+        @Html.HiddenFor(model => model.Temperatur)
+        <input class="btn btn-success" value="Speichern" type="submit" />
+
+    </form>
+    
 </div>

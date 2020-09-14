@@ -111,3 +111,4 @@ C:\Users\admin\source\repos\WetterApp\WetterApp\bin\Debug\netcoreapp3.1\RestShar
 C:\Users\admin\source\repos\WetterApp\WetterApp\obj\Debug\netcoreapp3.1\WetterApp.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\WetterApp\WetterApp\obj\Debug\netcoreapp3.1\WetterApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\admin\source\repos\WetterApp\WetterApp\obj\Debug\netcoreapp3.1\Razor\Views\Wetter\Auswerten.cshtml.g.cs
+C:\Users\admin\source\repos\WetterApp\WetterApp\obj\Debug\netcoreapp3.1\Razor\Views\Wetter\listeWetter.cshtml.g.cs

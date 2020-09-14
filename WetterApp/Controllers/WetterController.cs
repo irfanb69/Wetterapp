@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RestSharp;
+using WetterApp.Datenbank;
 using WetterApp.Models;
 
 namespace WetterApp.Controllers
@@ -59,8 +60,20 @@ namespace WetterApp.Controllers
             
         }
 
+        public IActionResult listeWetter()
+        {
+            Data liste = new Data();
 
+            var listeAufrufen = liste.getAll();
+            return View(listeAufrufen);
+        }
 
+        public IActionResult Speichern(Wetter wetter)
+        {
+            Data liste = new Data();
+            liste.speichern(wetter);
+            return RedirectToAction("listeWetter");
+        }
 
 
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,9 @@ namespace WetterApp.Models
 {
     public class Wetter
     {
+
+        public int Id { get; set; }
+        [Display(Name = "penis")]
         public string WetterLage { get; set; }
 
 
@@ -17,6 +21,7 @@ namespace WetterApp.Models
 
 
         public decimal Windgeschwindigkeit { get; set; }
-
+        //[DataType(DataType.Date)]
+        public DateTime Datum { get; set; }
     }
 }
